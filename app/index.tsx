@@ -1,4 +1,4 @@
-import { Router, router } from "expo-router";
+import { router } from "expo-router";
 import { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View, TextInput } from "react-native";
 
@@ -17,6 +17,7 @@ export default function Home(){
         <View style={s.body}>
             <View style={s.wrap}>
                 <Text style= {s.t}>Login</Text>
+                <View style={s.divider} />
                 <Text style= {s.t}>Email</Text>
                 <TextInput style ={s.input} onChangeText={setEmail} value={email} placeholder="Insira o E-mail"/>
                 <Text style= {s.t}>Senha</Text>
@@ -33,6 +34,11 @@ export default function Home(){
 }
 
 const s = StyleSheet.create({
+
+    divider: {
+    height: 2,
+    backgroundColor: "#be97c6",
+    },
 
     body:{
         backgroundColor:'#be97c6',
@@ -59,6 +65,7 @@ const s = StyleSheet.create({
     },
 
     t: {
+        fontWeight: 'bold',
         color: '#fff',
         fontSize: 18
     },

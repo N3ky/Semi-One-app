@@ -36,7 +36,7 @@ const s = StyleSheet.create({
   title:{
     fontSize: 20,
     fontWeight: "bold",
-    color: '#0a0909',
+    color: '#c353b4',
     marginBottom: 12
   },
   paragraph:{
